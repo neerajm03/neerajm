@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(61, 1, 158, 0.715),rgba(4, 4, 61, 0.719)),url(BG2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: inherit;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.NL {
+    width: 190px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #f9fc33;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1.5px solid #f9fc33;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    text-transform: capitalize;
+    font-size: large;
+}
+span{
+    background: #f9fc33;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+    transition: 0.5s;
+}
+button:hover {
+border: none;
+color: rgb(39, 39, 39);
+}
+button:active{
+    background-color: rgb(255, 255, 255);
+}
+.myimage {
+    width: 190px;
+    background-image: url(4raj.jpg);
+    background-position: center;
+}
+
+.table-sheet{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 115%;
+    overflow: auto;
+    width: auto;
+
+ th {
+    background-color: rgb(112,196,105);
+    color: white;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+ }
+ td {
+    background-color: rgb(238,238,238);
+    color:rgb(111,111,111);
+ }
+}
+
+
